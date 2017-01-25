@@ -1,10 +1,1 @@
-import app from "./app";
-import { APP_PORT } from "./utilities/secrets";
-import logger from "./utilities/logger";
-
-app
-  .listen(APP_PORT, () => {
-    logger.info(`server running on port : ${APP_PORT}`);
-    console.log(`server running on port : ${APP_PORT}`);
-  })
-  .on("error", (e: any) => logger.error(e));
+"Wed Jan 25 2017 07:49:00 GMT-0800 (Pacific Standard Time)" 
