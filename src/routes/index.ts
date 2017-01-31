@@ -1,8 +1,1 @@
-import { Router } from "express";
-import { PointsRoutes } from "./points.route";
-
-const router: Router = Router();
-
-router.use("/points", PointsRoutes);
-
-export const MainRouter: Router = router;
+"Mon Jan 30 2017 23:48:00 GMT-0800 (Pacific Standard Time)" 
