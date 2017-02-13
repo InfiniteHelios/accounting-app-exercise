@@ -1,1 +1,18 @@
-"Fri Feb 10 2017 18:46:00 GMT-0800 (Pacific Standard Time)" 
+export interface ITransaction {
+  payer: string;
+  points: number;
+  remainPoints: number;
+  spentPoints: number;
+  timestamp: Date;
+}
+
+export interface IAddPoints {
+  payer: string;
+  points: number;
+  timestamp: Date;
+}
+
+export interface ISpentPoints {
+  payer: string;
+  points: number;
+}

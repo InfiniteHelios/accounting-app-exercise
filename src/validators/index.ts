@@ -1,1 +1,11 @@
-"Thu Feb 09 2017 23:51:00 GMT-0800 (Pacific Standard Time)" 
+import { Request } from "express";
+import { validationResult } from "express-validator";
+
+export const resultsValidator = (req: Request) => {
+  const messages = [];
+  if (!validationResult(req).isEmpty()) {
+    const errors = validationResult(req).array();
+    for (const i of errors) messages.push(i);
+  }
+  return messages;
+};
